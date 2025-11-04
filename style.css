@@ -147,6 +147,10 @@ html {
     color: bisque;
 }
 
+.tieude2 {
+    text-wrap: nowrap;
+}
+
 
 .body-item .tieude:hover {
     transition: 0.8s;
