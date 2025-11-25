@@ -160,6 +160,8 @@ html {
 
 
 .body-item p {
+
+    margin-top: 3px;
     margin-left: 3px;
     line-height: 2rem;
     font-size: 1.6rem;
@@ -169,18 +171,18 @@ html {
 
 .header-body {
     gap: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+
 }
 
 .header-img {
-    display: grid;
+    display: flex;
 
 
     padding-top: 20px;
     margin-top: 60px;
     border-radius: 8px;
-    grid-template-columns: repeat(2, 6fr);
+
     gap: 40px;
 
 
@@ -362,7 +364,7 @@ html {
 }
 
 .social {
-    margin-left: 18PX;
+    margin-left: 55PX;
     display: flex;
     gap: 20px;
 }
@@ -393,20 +395,26 @@ html {
 }
 
 .footer-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-top .mail {
+    border-radius: 10px;
+    background-color: #d1d5db;
+    padding: 20px;
     margin-top: 20px;
     gap: 10px;
     width: 250px;
     display: flex;
     flex-direction: column;
+
 }
 
 .mail h3 {
+
     font-size: 1.6rem;
+
 }
 
 .footer-top .mail .thong-tin {
@@ -571,9 +579,9 @@ html {
 
 }
 
-form input,
-form textarea,
-form select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -581,9 +589,11 @@ form select {
     font-size: 14px;
 }
 
-form textarea {
-    min-height: 100px;
 
+
+textarea {
+    min-height: 100px;
+    max-width: 100%;
 }
 
 form button {
